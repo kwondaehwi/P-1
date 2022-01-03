@@ -1,0 +1,14 @@
+@import "header.css";
+@import "variables1.css";
+/* COMPONENTS */
+@import "component1/status-bar1.css";
+@import "component1/header-items.css";
+@import "component1/profile-component.css";
+/* SCREEN */
+@import "screen1/login_screen.css";
+@import "screen1/friends-screen.css";
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #2e363e;
+}

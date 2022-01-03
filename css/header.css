@@ -1,0 +1,24 @@
+.head {
+    background-color: #045D8B;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.site-name {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-bar {
+    margin-left: 15px;
+}
+
+.login {
+    text-decoration: none;
+    color: inherit;
+    margin-right: 15px;
+}
