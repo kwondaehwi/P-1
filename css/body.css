@@ -1,0 +1,36 @@
+.upper {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-weight: 900;
+}
+
+.register-btn {
+    text-decoration: none;
+    color: inherit;
+}
+
+.post-list {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.post-cotainer {
+    list-style: none;   /*왼쪽 점 제거*/
+    -webkit-padding-start: 0px; /*왼쪽 여백 제거*/
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 60%;
+    
+}
+
+.post {
+    border-bottom: 1px solid black;
+    margin-left: 0px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 900;
+}
