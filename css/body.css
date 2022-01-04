@@ -20,14 +20,14 @@
 .post-cotainer {
     list-style: none;   /*왼쪽 점 제거*/
     -webkit-padding-start: 0px; /*왼쪽 여백 제거*/
-    border: 1px solid black;
+    border: 3px solid black;
     border-radius: 15px;
     width: 60%;
     
 }
 
 .post {
-    border-bottom: 1px solid black;
+    border-bottom: 3px solid black;
     margin-left: 0px;
     padding: 40px;
     display: flex;
