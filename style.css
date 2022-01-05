@@ -1,0 +1,195 @@
+.hidden {
+    display: none;
+}
+
+.rectangle1 {
+    position: absolute;
+    width: 501px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+
+    background-color: #045D8B;
+}
+
+.rectangle1 .AJOU_MEMO {
+    position: absolute;
+    width: 161px;
+    height: 48px;
+    left: 183px;
+    top: 6px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 48px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.rectangle1 .LOG_IN {
+    position: absolute;
+    width: 45px;
+    height: 22px;
+    left: 448px;
+    top: 20px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    cursor: pointer;
+}
+
+.rectangle1 .menuIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 6px 3px;
+    
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 17px;
+    top: 6px;
+
+    cursor: pointer;
+}
+
+.rectangle1 .menuIcon .menuVector1 {
+    position: absolute;
+    left: 12.5%;
+    right: 12.5%;
+    top: 75%;
+    bottom: 25%;
+
+    border: 1px solid #FFFFFF;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 6px 0px;
+}
+
+.rectangle1 .menuIcon .menuVector2 {
+    position: absolute;
+    left: 12.5%;
+    right: 12.5%;
+    top: 50%;
+    bottom: 50%;
+
+    border: 1px solid #FFFFFF;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 6px 0px;
+}
+
+.rectangle1 .menuIcon .menuVector3 {
+    position: absolute;
+    left: 12.5%;
+    right: 12.5%;
+    top: 25%;
+    bottom: 75%;
+
+    border: 1px solid #FFFFFF;
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 6px 0px;
+}
+
+.tableList {
+    position: absolute;
+    width: 350px;
+    height: 359px;
+    left: 75px;
+    top: 146px;
+
+    border: 1px solid #045D8B;
+    border-radius: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.tableList .tableListText {
+    border-bottom: 1px solid #045D8B;
+}
+
+.menuList {
+    position: absolute;
+    width: 178px;
+    height: 564px;
+    left: -1px;
+    top: 60px;
+
+    background-color: #CFDAFF;
+}
+
+.menuList .menuTableList {
+    position: absolute;
+    width: 129px;
+    height: 274px;
+    left: 24px;
+    top: 16px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+}
+
+.menuList .menuTableList .menuTableListText {
+    border-bottom: 1px solid #045D8B;
+}
+
+.upload {
+    position: absolute;
+    width: 55px;
+    height: 21px;
+    left: 370px;
+    top: 101px;
+
+    white-space: nowrap;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 21px;
+    text-align: center;
+
+    border: 1px solid #000000;
+
+    color: #000000;
+
+    cursor: pointer;
+}
+
+.freeBoard {
+    position: absolute;
+    width: 86px;
+    height: 29px;
+    left: 75px;
+    top: 101px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #000000;
+}
