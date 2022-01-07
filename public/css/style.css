@@ -1,7 +1,7 @@
-@import "body.css";
-@import "footer.css";
+@import url(body.css);
+@import url(footer.css);
 /* COMPONENTS */
-@import "header.css";
+@import url(header.css);
 /* SCREEN */
 
 body {
