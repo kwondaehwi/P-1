@@ -1,9 +1,9 @@
 export default class {
-    constructor() {
-        document.title = "Home";
-    }
-    async getHtml() {
-        return `
+  constructor() {
+    document.title = "Home";
+  }
+  async getHtml() {
+    return `
         `;
-    }
+  }
 }

@@ -51,6 +51,9 @@
   margin-left: auto;
   margin-right: auto;
   padding: 15px;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 900;
 }
 
 .hidden {
