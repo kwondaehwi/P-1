@@ -10,49 +10,18 @@
   <body>
     <header>
       <i class="fas fa-bars menu-bar"></i>
-      <h2 class="site-name">AJOU Memo</h2>
+      <a href="/" class="site-name">AJOU Memo</a>
       <a class="login" href="#">Log in</a>
     </header>
 
     <main>
+      <!-- 현재 페이지 개요 -->
       <div class="upper">
-        <span class="page-name">자유게시판</span>
-        <a href="#" class="register-btn">등록하기</a>
+        <a href="/posts" class="nav-item" data-link>자유게시판</a>
+        <a href="/" class="nav-item" data-link>등록하기</a>
+        <!-- <a href="/settings" class="nav-item" data-link>Settings</a> -->
       </div>
-      <div class="post-list">
-        <ul class="post-cotainer">
-          <li class="post">
-            <span class="date">12/18</span>
-            <span class="post__title">아주 비기너에 참여하시는...</span>
-            <span class="author">익명</span>
-          </li>
-          <li class="post">
-            <span class="date">12/18</span>
-            <span class="post__title">아주 비기너에 참여하시는...</span>
-            <span class="author">익명</span>
-          </li>
-          <li class="post">
-            <span class="date">12/18</span>
-            <span class="post__title">아주 비기너에 참여하시는...</span>
-            <span class="author">익명</span>
-          </li>
-          <li class="post">
-            <span class="date">12/18</span>
-            <span class="post__title">아주 비기너에 참여하시는...</span>
-            <span class="author">익명</span>
-          </li>
-          <li class="post">
-            <span class="date">12/18</span>
-            <span class="post__title">아주 비기너에 참여하시는...</span>
-            <span class="author">익명</span>
-          </li>
-          <li class="post">
-            <span class="date">12/18</span>
-            <span class="post__title">아주 비기너에 참여하시는...</span>
-            <span class="author">익명</span>
-          </li>
-        </ul>
-      </div>
+      <div id="root"></div>
       <div class="hidden">
         <span class="bulletin-board">자유 게시판</span>
         <span class="bulletin-board">비밀 게시판</span>
@@ -62,23 +31,12 @@
       </div>
     </main>
 
-    <footer class="page-numbers">
-      <a href="#" class="page-numbers__number">1</a>
-      <a href="#" class="page-numbers__number">2</a>
-      <a href="#" class="page-numbers__number">3</a>
-      <a href="#" class="page-numbers__number">4</a>
-      <a href="#" class="page-numbers__number">5</a>
-      <a href="#" class="page-numbers__number">6</a>
-      <a href="#" class="page-numbers__number">7</a>
-      <a href="#" class="page-numbers__number">8</a>
-      <a href="#" class="page-numbers__number">9</a>
-    </footer>
-
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
       crossorigin="anonymous"
     ></script>
     <script src="/index.js"></script>
-    <script src="/js/app.js"></script>
+    <script src="/js/pages/app.js"></script>
+    <script type="module" src="/js/main.js"></script>
   </body>
 </html>

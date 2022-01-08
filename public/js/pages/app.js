@@ -5,6 +5,8 @@ const hiddenMenu = document.querySelector(".hidden");
 function handleMenuClick() {
   hiddenMenu.classList.toggle("hidden-menu");
   hiddenMenu.classList.toggle("hidden");
+  console.log("clicked");
+  console.dir(hiddenMenu);
 }
 
 menuBar.addEventListener("click", handleMenuClick);
