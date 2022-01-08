@@ -1,9 +1,9 @@
 export default class {
-    constructor() {
-        document.title = "Posts";
-    }
-    async getHtml() {
-        return `
+  constructor() {
+    document.title = "Posts";
+  }
+  async getHtml() {
+    return `
         <ul class="post-cotainer">
         <li class="post">
           <span class="date">12/18</span>
@@ -37,5 +37,5 @@ export default class {
         </li>
       </ul>
         `;
-    }
+  }
 }

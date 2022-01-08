@@ -59,3 +59,34 @@
 .hidden {
   display: none;
 }
+
+.posting-box {
+  font-size: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: solid 2px grey;
+  border-radius: 8px;
+}
+
+textarea {
+  /* height: 200px; */
+  padding: 10px;
+  box-sizing: border-box;
+  border: solid 2px grey;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.btn {
+  width: 20%;
+  position: relative;
+  left: 80%;
+}

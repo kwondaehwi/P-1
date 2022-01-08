@@ -2,12 +2,14 @@ import Home from "./pages/Home.js";
 import Posts from "./pages/Posts.js";
 import Settings from "./pages/Settings.js";
 import NotFound from "./pages/NotFound.js";
+import Register from "./pages/Register.js";
 
 const router = async () => {
   const routes = [
     { path: "/", view: Home },
     { path: "/posts", view: Posts },
     { path: "/settings", view: Settings },
+    { path: "/register", view: Register },
   ];
 
   const pageMatches = routes.map((route) => {

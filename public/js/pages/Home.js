@@ -4,6 +4,7 @@ export default class {
   }
   async getHtml() {
     return `
+            <h1>This is Home Page</h1>
         `;
   }
 }
