@@ -3,7 +3,7 @@
 body{
     background: #E5E5E5;;
 }
-header{
+#header{
     width: 501px;
     height: 60px;
     left: 0px;
@@ -71,7 +71,7 @@ background-color: white;
 
 }
 
-nav {
+#nav {
     width: 0px;
     height: 564px;
     left: 0px;
@@ -81,7 +81,7 @@ nav {
     background: #CFDAFF;
 }
 
-nav a {
+#nav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
@@ -95,7 +95,7 @@ nav a {
     color: #000000;
 }
 
-.nav_item:hover {
+#nav_item:hover {
     background: rgba(255, 255, 255, 0.05);
 }
 

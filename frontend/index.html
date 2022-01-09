@@ -9,30 +9,26 @@
     </head>
     <body>
         <!--header-->
-        <header>
-            <div class="burger" onclick="openNav()">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div class="logo">AJOU Memo</div>
-            <div class="login">Log In</div>
-        </header>
+        <div id="header"></div>
 
         <!--navbar-->
-        <nav id="nav">
-            <a href="/">자유 게시판</a>
-            <a href="/board1">비밀 게시판</a>
-            <a href="/board2">정보 게시판</a>
-            <a href="/board3">홍보 게시판</a>
-            <a href="/board4" >SW 게시판</a>
-        </nav>
+        <div id="nav"></div>
 
         <!--content-->
+        <div id="content"></div> 
         
-        <div id="content"></div>
-        
-        
+        <script>
+            /* Set the width of the side navigation to 250px */
+            function openNav() {
+                document.getElementById("nav").style.width = "178px";
+            }
+  
+            /* Set the width of the side navigation to 0 */
+            function closeNav() {
+                document.getElementById("nav").style.width = "0";
+            }
+
+        </script>
         <script type="module" src="./static/js/index.js"></script>
     </body>
 </html>

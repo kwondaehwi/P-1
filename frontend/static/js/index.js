@@ -1,16 +1,12 @@
 import Home from "./pages/Home.js";
 import Posts from "./pages/Posts.js";
+import Nav from "./pages/Nav.js";
+import Header from "./pages/Header.js";
 
+const root=document.querySelector("#root");
 
-/* Set the width of the side navigation to 250px */
-function openNav() {
-    document.getElementById("nav").style.width = "178px";
-}
-  
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-    document.getElementById("nav").style.width = "0";
-}
+Header(root);
+Nav(root);
 
 const router = async () => {
     const routes = [
