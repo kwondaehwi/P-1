@@ -4,6 +4,10 @@ export default class {
   }
   async getHtml() {
     return `
+    <div class="upper">
+    <a href="/posts" class="nav-item" data-link>자유게시판</a>
+    <a href="/register" class="nav-item" data-link>등록하기</a>
+  </div>
         <ul class="post-cotainer">
         <li class="post">
           <span class="date">12/18</span>
