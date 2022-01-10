@@ -1,6 +1,9 @@
+import Home from "./Home.js";
 import ButtonReaction from "./popMenu.js";
 import Post from "./Posts.js";
 import Register from "./Register.js";
+import Login from "./Login.js";
+// import NavMenu from "./NavMenu.js";
 
 const $ = document;
 
@@ -19,10 +22,10 @@ function moveToRoute(root, purpose) {
       ButtonReaction();
       break;
     case "home":
-      console.log("hello");
+      Home(root);
       break;
     case "login":
-      console.log("hello");
+      Login(root);
       break;
     case "free-board":
       Post(root);

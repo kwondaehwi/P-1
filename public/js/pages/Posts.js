@@ -34,6 +34,7 @@ export default function Post(root) {
             <span class="author">익명</span>
           </li>`;
 
+  // 대체해야할 페이지가 존재하면 지워버리고 새 것을 삽입한다.
   const toBeReplaced = $.querySelector(".replace");
   if (toBeReplaced) {
     console.log(toBeReplaced);

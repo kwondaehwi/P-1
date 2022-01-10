@@ -15,6 +15,7 @@ export default function Register(root) {
     <textarea name="posting-content" class="form-element" rows="20" cols="70" placeholder="내용"></textarea>
     <input type="submit" class="form-element btn" value="글쓰기">`;
 
+  // 대체해야할 페이지가 존재하면 지워버리고 새 것을 삽입한다.
   const toBeReplaced = $.querySelector(".replace");
   if (toBeReplaced) {
     console.log(toBeReplaced);

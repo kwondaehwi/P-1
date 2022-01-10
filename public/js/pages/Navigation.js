@@ -5,7 +5,7 @@ const $ = document;
 
 export default function Navigation(root) {
   const nav = $.createElement("div");
-  nav.classList.add("upper");
+  nav.classList.add("upper", "replace-on");
   nav.innerHTML = `
   <span class="nav-item free-board">자유게시판</span>
   <span class="nav-item register">등록하기</span>
