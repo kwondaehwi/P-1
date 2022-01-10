@@ -1,3 +1,4 @@
+// 네비게이션 바 html 추가 및 버튼 기능 활성화
 import createButton from "./Button.js";
 
 const $ = document;

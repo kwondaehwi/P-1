@@ -8,6 +8,7 @@ const state = {
   state: "main",
 };
 
+// 처음 페이지가 시작될때 보이는 화면
 function init() {
   const root = $.querySelector("#root");
   Header(root);
