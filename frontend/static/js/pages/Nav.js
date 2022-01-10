@@ -7,3 +7,15 @@ export default function Nav(root) {
             <a href="/board4" class="nav_item" data-link>SW 게시판</a>
         `
 }
+export function movePage(root, title){
+    const button=document.createElement('div')
+    button.innerHTML=title;
+    button.addEventListener('click',()=>moveTitle(title))
+    root.innerHTML=button
+}
+        
+
+
+export function moveTitle(title){
+    history.pushState(null,null, `/${title}`)
+}

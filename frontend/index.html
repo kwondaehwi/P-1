@@ -8,27 +8,15 @@
         <title>Ajou memo</title>
     </head>
     <body>
-        <!--header-->
-        <div id="header"></div>
-
-        <!--navbar-->
-        <div id="nav"></div>
-
-        <!--content-->
-        <div id="content"></div> 
-        
-        <script>
-            /* Set the width of the side navigation to 250px */
-            function openNav() {
-                document.getElementById("nav").style.width = "178px";
-            }
-  
-            /* Set the width of the side navigation to 0 */
-            function closeNav() {
-                document.getElementById("nav").style.width = "0";
-            }
-
-        </script>
+        <header id="header"></header>
+        <nav id="nav">
+            <a href="/" class="nav_item" data-link>자유 게시판</a>
+            <a href="/board1" class="nav_item" data-link>비밀 게시판</a>
+            <a href="/board2" class="nav_item" data-link>정보 게시판</a>
+            <a href="/board3" class="nav_item" data-link>홍보 게시판</a>
+            <a href="/board4" class="nav_item" data-link>SW 게시판</a>
+        </nav>
+        <div id="root"></div>
         <script type="module" src="./static/js/index.js"></script>
     </body>
 </html>

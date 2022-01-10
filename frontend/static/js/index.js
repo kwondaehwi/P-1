@@ -3,10 +3,11 @@ import Posts from "./pages/Posts.js";
 import Nav from "./pages/Nav.js";
 import Header from "./pages/Header.js";
 
-const root=document.querySelector("#root");
+const $=document
+const root=$.querySelector('#root');
 
-Header(root);
-Nav(root);
+Header(header);
+
 
 const router = async () => {
     const routes = [
@@ -33,10 +34,10 @@ const router = async () => {
             isMatch: true,
         };
         const page = new NotFound();
-        document.querySelector("#content").innerHTML = await page.getHtml();
+        document.querySelector("#root").innerHTML = await page.getHtml();
     } else {
         const page = new match.route.view();
-        document.querySelector("#content").innerHTML = await page.getHtml();
+        document.querySelector("#root").innerHTML = await page.getHtml();
     }
 };
 

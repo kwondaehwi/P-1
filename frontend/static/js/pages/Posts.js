@@ -4,6 +4,8 @@ export default class {
         document.title = "Posts";
     }
     async getHtml() {
-        return `<h2>This is Posts Page</h2>`;
+        return `
+        <h2>This is Posts Page</h2>
+        `;
     }
 }

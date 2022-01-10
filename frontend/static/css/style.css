@@ -3,6 +3,7 @@
 body{
     background: #E5E5E5;;
 }
+
 #header{
     width: 501px;
     height: 60px;
@@ -81,7 +82,7 @@ background-color: white;
     background: #CFDAFF;
 }
 
-#nav a {
+.nav_item {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
@@ -95,11 +96,11 @@ background-color: white;
     color: #000000;
 }
 
-#nav_item:hover {
+.nav_item:hover {
     background: rgba(255, 255, 255, 0.05);
 }
 
-article{
+#root{
     position: absolute;
     width: 350px;
     height: 359px;
@@ -111,7 +112,7 @@ article{
     box-sizing: border-box;
     border-radius: 10px;
 }
-#content {
+#root {
     margin: 2em;
     line-height: 1.5;
     font-weight: 500;
