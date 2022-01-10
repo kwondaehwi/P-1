@@ -1,5 +1,6 @@
 import ButtonReaction from "./popMenu.js";
 import Post from "./Posts.js";
+import Register from "./Register.js";
 
 const $ = document;
 
@@ -25,5 +26,9 @@ function moveToRoute(root, purpose) {
       break;
     case "free-board":
       Post(root);
+      break;
+    case "register":
+      Register(root);
+      break;
   }
 }
