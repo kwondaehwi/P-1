@@ -19,12 +19,13 @@ function moveToRoute(root, purpose) {
   // 기존에는 각 파일에 history.pushState를 넣어줬을땐 문제가 있었는데 이곳에 넣으니 문제가 해결됨.
   history.pushState({ data: `${purpose}` }, null, `${purpose}`);
   const navCheck = $.querySelector(".upper");
+
   switch (purpose) {
     case "menu":
       ButtonReaction();
       break;
     case "home":
-      console.log(navCheck);
+      // 로그인 창을 다녀오고 나면 nav가 사라지는 것을 대처하기 위해
       if (!navCheck) {
         Navigation(root);
       }
