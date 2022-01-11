@@ -1,7 +1,8 @@
 const $ = document;
 
-export default function Login(root) {
+export default function Login(root, purpose) {
   const login = $.createElement("div");
+  // history.pushState({ data: `${purpose}` }, null, `${purpose}`);
   login.innerHTML = `
   <div class="login-box">
   <h1> Login Page </h1>

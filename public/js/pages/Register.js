@@ -1,7 +1,8 @@
 const $ = document;
 
-export default function Register(root) {
+export default function Register(root, purpose) {
   const registerForm = $.createElement("form");
+  // history.pushState({ data: `${purpose}` }, null, `${purpose}`);
   registerForm.innerHTML = `
       <select name="posting-type form-element">
         <option value="start" selected> 게시판을 선택해 주세요
@@ -13,7 +14,7 @@ export default function Register(root) {
     </select>
     <input type="text" name="posting-title" class="form-element" placeholder="제목을 입력해 주세요">
     <textarea name="posting-content" class="form-element" rows="20" cols="70" placeholder="내용"></textarea>
-    <input type="submit" class="form-element btn" value="글쓰기">`;
+    <input type="submit" class="form-element btn" value="글쓰기" style="cursor:pointer">`;
 
   // 대체해야할 페이지가 존재하면 지워버리고 새 것을 삽입한다.
   const toBeReplaced = $.querySelector(".replace");

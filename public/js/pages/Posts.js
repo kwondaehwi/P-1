@@ -1,34 +1,35 @@
 const $ = document;
 
-export default function Post(root) {
+export default function Post(root, purpose) {
   const post = $.createElement("ul");
+  // history.pushState({ data: `${purpose}` }, null, `${purpose}`);
   post.innerHTML = `
-          <li class="post">
+          <li class="post" style="cursor:pointer">
             <span class="date">12/18</span>
             <span class="post__title">아주 비기너에 참여하시는...</span>
             <span class="author">익명</span>
           </li>
-          <li class="post">
+          <li class="post" style="cursor:pointer">
             <span class="date">12/18</span>
             <span class="post__title">아주 비기너에 참여하시는...</span>
             <span class="author">익명</span>
           </li>
-          <li class="post">
+          <li class="post" style="cursor:pointer">
             <span class="date">12/18</span>
             <span class="post__title">아주 비기너에 참여하시는...</span>
             <span class="author">익명</span>
           </li>
-          <li class="post">
+          <li class="post" style="cursor:pointer">
             <span class="date">12/18</span>
             <span class="post__title">아주 비기너에 참여하시는...</span>
             <span class="author">익명</span>
           </li>
-          <li class="post">
+          <li class="post" style="cursor:pointer">
             <span class="date">12/18</span>
             <span class="post__title">아주 비기너에 참여하시는...</span>
             <span class="author">익명</span>
           </li>
-          <li class="post">
+          <li class="post" style="cursor:pointer">
             <span class="date">12/18</span>
             <span class="post__title">아주 비기너에 참여하시는...</span>
             <span class="author">익명</span>

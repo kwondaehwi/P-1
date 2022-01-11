@@ -1,6 +1,10 @@
 import Header from "./pages/Header.js";
 import Navigation from "./pages/Navigation.js";
-// import createButton from "./pages/Button.js";
+import Home from "./pages/Home.js";
+import ButtonReaction from "./pages/popMenu.js";
+import Post from "./pages/Posts.js";
+import Register from "./pages/Register.js";
+import Login from "./pages/Login.js";
 
 const $ = document;
 
@@ -15,4 +19,57 @@ function init() {
   Navigation(root);
 }
 
-init();
+const currentPage = location.pathname;
+console.log(currentPage);
+if (currentPage !== "/") {
+  // url이 루트가 아닌 경우(새로고침 된 경우 현재 경로에 맞는 화면 유지)
+  init();
+  switch (currentPage) {
+    case "/menu":
+      ButtonReaction();
+      break;
+    case "/home":
+      Home(root, currentPage);
+      break;
+    case "/":
+      Home(root, currentPage);
+      break;
+    case "/login":
+      Login(root, currentPage);
+      break;
+    case "/free-board":
+      Post(root, currentPage);
+      break;
+    case "/register":
+      Register(root, currentPage);
+      break;
+  }
+} else {
+  // url이 루트라면
+  init();
+}
+
+// 뒤로 가기나 앞으로 가기할때 현재의 url에 맞는 화면 출력
+window.addEventListener("popstate", () => {
+  const currentPage = location.pathname;
+  switch (currentPage) {
+    case "/menu":
+      ButtonReaction();
+      break;
+    case "/home":
+      Home(root, currentPage);
+      break;
+    case "/":
+      Home(root, currentPage);
+      break;
+    case "/login":
+      Login(root, currentPage);
+      break;
+    case "/free-board":
+      Post(root, currentPage);
+      break;
+    case "/register":
+      Register(root, currentPage);
+      break;
+  }
+});

@@ -1,7 +1,8 @@
 const $ = document;
 
-export default function Home(root) {
+export default function Home(root, purpose) {
   const home = $.createElement("div");
+  // history.pushState({ data: `${purpose}` }, null, `${purpose}`);
   home.innerHTML = `
           <h1>Welcome!!</h1>`;
 

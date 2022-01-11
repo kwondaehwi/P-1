@@ -3,6 +3,7 @@ import ButtonReaction from "./popMenu.js";
 import Post from "./Posts.js";
 import Register from "./Register.js";
 import Login from "./Login.js";
+import Navigation from "./Navigation.js";
 // import NavMenu from "./NavMenu.js";
 
 const $ = document;
@@ -15,23 +16,28 @@ export default function makeButton(purpose) {
 
 // 해당 버튼에 따른 상호작용
 function moveToRoute(root, purpose) {
-  history.pushState(null, null, `/${purpose}`);
-
+  // 기존에는 각 파일에 history.pushState를 넣어줬을땐 문제가 있었는데 이곳에 넣으니 문제가 해결됨.
+  history.pushState({ data: `${purpose}` }, null, `${purpose}`);
+  const navCheck = $.querySelector(".upper");
   switch (purpose) {
     case "menu":
       ButtonReaction();
       break;
     case "home":
-      Home(root);
+      console.log(navCheck);
+      if (!navCheck) {
+        Navigation(root);
+      }
+      Home(root, purpose);
       break;
     case "login":
-      Login(root);
+      Login(root, purpose);
       break;
     case "free-board":
-      Post(root);
+      Post(root, purpose);
       break;
     case "register":
-      Register(root);
+      Register(root, purpose);
       break;
   }
 }
