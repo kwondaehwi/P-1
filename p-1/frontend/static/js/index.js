@@ -11,7 +11,6 @@ const navigateTo = url =>{
 const router = async() => {
     const routes = [
         {path: "/", view: Main},
-        {path: "/menu", view: Menu},
         {path: "/login", view: LogIn},
         {path: "/enroll", view: Enroll},
     ];
@@ -32,7 +31,7 @@ const router = async() => {
         };
     }
     const view = new match.route.view();
-    document.querySelector("#app").innerHTML = await view.getHtml();
+    document.querySelector("#root").innerHTML = await view.getHtml();
 
     
 };

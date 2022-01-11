@@ -4,6 +4,12 @@ export default class {
     }
     async getHtml() {
         return `
+            <div class="topnav">
+            <a class="nav_item" href="/menu" data-link>Menu</a>
+            <a class="nav_item" href="/" data-link>AJOU Memo</a>
+            <a class="nav_item" href="/login" data-link>Log in</a>
+            </div>
+
             <div class="midnav">
             <a >자유게시판</a>
             <a class="nav_item" href="/enroll" data-link>등록하기</a>
