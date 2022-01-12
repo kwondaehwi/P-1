@@ -29,19 +29,19 @@ if (currentPage !== "/") {
       ButtonReaction();
       break;
     case "/home":
-      Home(root, currentPage);
+      Home(root);
       break;
     case "/":
-      Home(root, currentPage);
+      Home(root);
       break;
     case "/login":
-      Login(root, currentPage);
+      Login(root);
       break;
     case "/free-board":
-      Post(root, currentPage);
+      Post(root);
       break;
     case "/register":
-      Register(root, currentPage);
+      Register(root);
       break;
   }
 } else {

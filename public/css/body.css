@@ -47,7 +47,7 @@
   text-align: center;
 }
 
-.bulletin-board {
+.board-menu {
   margin-top: 20px;
   border-bottom: 2px solid black;
   width: 45%;
@@ -92,4 +92,19 @@ textarea {
   width: 20%;
   position: relative;
   left: 80%;
+}
+
+.click {
+  cursor: pointer;
+}
+
+.login-btn-box {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.login-btn {
+  margin-right: 5px;
+  margin-left: 5px;
 }
