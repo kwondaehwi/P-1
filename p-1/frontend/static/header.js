@@ -10,11 +10,11 @@ export default class {
             
             <div class="sidebar">
             <ul>
-                <li><a href="/freeboard">자유게시판</a></li>
-                <li><a href="/infoboard">정보게시판</a></li>
-                <li><a href="/prboard">홍보게시판</a></li>
-                <li><a href="/secretboard">비밀게시판</a></li>
-                <li><a href="/swboard">SW게시판</a></li>
+                <li><a href="/free" data-link>자유게시판</a></li>
+                <li><a href="/info" data-link>정보게시판</a></li>
+                <li><a href="/pro" data-link>홍보게시판</a></li>
+                <li><a href="/secret" data-link>비밀게시판</a></li>
+                <li><a href="/sw" data-link>SW게시판</a></li>
             </ul> 
             </div>`;
     }

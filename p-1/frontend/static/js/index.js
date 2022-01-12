@@ -1,7 +1,7 @@
 import Main from "./pages/main.js";
 import LogIn from "./pages/login.js";
 import Enroll from "./pages/enroll.js";
-import Header from "./pages/header.js"
+import Header from "../header.js"
 
 
 const navigateTo = url =>{
@@ -14,6 +14,11 @@ const router = async() => {
         {path: "/", view: Main},
         {path: "/login", view: LogIn},
         {path: "/enroll", view: Enroll},
+        {path: "/free", view: Main},
+        {path: "/info", view: Main},
+        {path: "/pro", view: Main},
+        {path: "/secret", view: Main},
+        {path: "/sw", view: Main},
     ];
 
     const pageMatches = routes.map((route) => {
