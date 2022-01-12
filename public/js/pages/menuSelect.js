@@ -4,6 +4,7 @@ export default function handleMenuClick() {
   const hiddenMenu = document.querySelectorAll(".board-menu");
   //   const purpose = hiddenMenu[1].textContent;
   hiddenMenu.forEach((buttonName) => {
+    // 게시판 이름
     const post = buttonName.textContent;
     const newURL = buttonName.id;
     buttonName.addEventListener("click", () => moveToRoute(root, post, newURL));
@@ -16,26 +17,19 @@ function moveToRoute(root, post, newURL) {
   history.pushState(null, null, `${newURL}`);
   switch (post) {
     case "자유 게시판":
-      Post(root);
+      Post(root, post);
       break;
     case "비밀 게시판":
-      Post(root);
+      Post(root, post);
       break;
     case "정보 게시판":
-      Post(root);
+      Post(root, post);
       break;
     case "홍보 게시판":
-      Post(root);
+      Post(root, post);
       break;
     case "SW 게시판":
-      Post(root);
+      Post(root, post);
       break;
   }
 }
-// function createButtons(buttonNames) {
-//   buttonNames.forEach((buttonName) => {
-//     createButton(buttonName);
-//     const purpose = "free-board";
-//     history.pushState({ data: `${purpose}` }, null, `${purpose}`);
-//   });
-// }

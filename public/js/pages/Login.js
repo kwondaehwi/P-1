@@ -24,6 +24,10 @@ export default function Login(root) {
   if (toBeReplacedNav) {
     toBeReplacedNav.remove();
   }
+  const toBeReplacedTitle = $.querySelector(".replace-title");
+  if (toBeReplacedTitle) {
+    toBeReplacedTitle.remove();
+  }
   login.classList.add("login-box", "replace");
   root.appendChild(login);
 }

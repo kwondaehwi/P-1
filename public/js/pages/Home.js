@@ -10,6 +10,10 @@ export default function Home(root) {
   if (toBeReplaced) {
     toBeReplaced.remove();
   }
+  const toBeReplacedTitle = $.querySelector(".replace-title");
+  if (toBeReplacedTitle) {
+    toBeReplacedTitle.remove();
+  }
   home.classList.add("home", "replace");
   root.appendChild(home);
 }

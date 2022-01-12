@@ -21,6 +21,10 @@ export default function Register(root) {
   if (toBeReplaced) {
     toBeReplaced.remove();
   }
+  const toBeReplacedTitle = $.querySelector(".replace-title");
+  if (toBeReplacedTitle) {
+    toBeReplacedTitle.remove();
+  }
   registerForm.classList.add("posting-box", "replace");
   registerForm.setAttribute("action", "처리할페이지주소");
   registerForm.setAttribute("method", "post");

@@ -1,8 +1,13 @@
 const $ = document;
 
-export default function Post(root) {
+export default function Post(root, name) {
   const post = $.createElement("ul");
-  // history.pushState({ data: `${purpose}` }, null, `${purpose}`);
+  const postTitle = $.createElement("h1");
+  if (name === undefined) {
+    name = "자유게시판";
+    console.log(name);
+  }
+  postTitle.innerHTML += `<h3>` + name + `</h3>`;
   post.innerHTML = `
           <li class="post click">
             <span class="date">12/18</span>
@@ -40,6 +45,12 @@ export default function Post(root) {
   if (toBeReplaced) {
     toBeReplaced.remove();
   }
+  const toBeReplacedTitle = $.querySelector(".replace-title");
+  if (toBeReplacedTitle) {
+    toBeReplacedTitle.remove();
+  }
   post.classList.add("post-cotainer", "replace");
+  postTitle.classList.add("replace-title");
+  root.appendChild(postTitle);
   root.appendChild(post);
 }
