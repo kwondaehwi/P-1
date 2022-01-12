@@ -1,7 +1,8 @@
 import Main from "./pages/main.js";
-import Menu from "./pages/menu.js";
 import LogIn from "./pages/login.js";
 import Enroll from "./pages/enroll.js";
+import Header from "./pages/header.js"
+
 
 const navigateTo = url =>{
     history.pushState(null, null, url);
@@ -30,8 +31,12 @@ const router = async() => {
             isMatch: true,
         };
     }
+    const header = new Header();
     const view = new match.route.view();
-    document.querySelector("#root").innerHTML = await view.getHtml();
+    const root = document.querySelector("#root");
+    root.innerHTML = await header.getHtml();
+    root.innerHTML += await view.getHtml();
+
 
     
 };

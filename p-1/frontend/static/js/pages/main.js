@@ -1,14 +1,10 @@
+
 export default class {
     constructor() {
         document.title = "Main";
     }
     async getHtml() {
         return `
-            <div class="topnav">
-            <a class="nav_item" href="/menu" data-link>Menu</a>
-            <a class="nav_item" href="/" data-link>AJOU Memo</a>
-            <a class="nav_item" href="/login" data-link>Log in</a>
-            </div>
 
             <div class="midnav">
             <a >자유게시판</a>
