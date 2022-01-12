@@ -20,7 +20,6 @@ function init() {
 }
 
 const currentPage = location.pathname;
-console.log(currentPage);
 if (currentPage !== "/") {
   // url이 루트가 아닌 경우(새로고침 된 경우 현재 경로에 맞는 화면 유지)
   init();
@@ -38,7 +37,11 @@ if (currentPage !== "/") {
       Login(root);
       break;
     case "/free-board":
-      Post(root);
+    case "/secret-board":
+    case "/info-board":
+    case "/promo-board":
+    case "/sw-board":
+      Post(root, currentPage);
       break;
     case "/register":
       Register(root);
@@ -53,23 +56,27 @@ if (currentPage !== "/") {
 window.addEventListener("popstate", () => {
   const currentPage = location.pathname;
   switch (currentPage) {
-    case "/menu":
-      ButtonReaction();
-      break;
+    // case "/menu":
+    //   ButtonReaction();
+    //   break;
     case "/home":
-      Home(root, currentPage);
+      Home(root);
       break;
     case "/":
-      Home(root, currentPage);
+      Home(root);
       break;
     case "/login":
-      Login(root, currentPage);
+      Login(root);
       break;
     case "/free-board":
+    case "/secret-board":
+    case "/info-board":
+    case "/promo-board":
+    case "/sw-board":
       Post(root, currentPage);
       break;
     case "/register":
-      Register(root, currentPage);
+      Register(root);
       break;
   }
 });

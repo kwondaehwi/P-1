@@ -4,8 +4,26 @@ export default function Post(root, name) {
   const post = $.createElement("ul");
   const postTitle = $.createElement("h1");
   if (name === undefined) {
-    name = "자유게시판";
+    name = "자유 게시판";
     console.log(name);
+  } else {
+    switch (name) {
+      case "/free-board":
+        name = "자유 게시판";
+        break;
+      case "/secret-board":
+        name = "비밀 게시판";
+        break;
+      case "/info-board":
+        name = "정보 게시판";
+        break;
+      case "/promo-board":
+        name = "홍보 게시판";
+        break;
+      case "/sw-board":
+        name = "SW 게시판";
+        break;
+    }
   }
   postTitle.innerHTML += `<h3>` + name + `</h3>`;
   post.innerHTML = `

@@ -2,14 +2,12 @@ import Post from "./Posts.js";
 
 export default function handleMenuClick() {
   const hiddenMenu = document.querySelectorAll(".board-menu");
-  //   const purpose = hiddenMenu[1].textContent;
   hiddenMenu.forEach((buttonName) => {
     // 게시판 이름
     const post = buttonName.textContent;
     const newURL = buttonName.id;
     buttonName.addEventListener("click", () => moveToRoute(root, post, newURL));
   });
-  //   hiddenMenu[1].addEventListener("click", () => moveToRoute(root, purpose));
 }
 
 // 해당 버튼에 따른 상호작용

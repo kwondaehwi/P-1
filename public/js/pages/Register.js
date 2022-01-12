@@ -2,7 +2,6 @@ const $ = document;
 
 export default function Register(root) {
   const registerForm = $.createElement("form");
-  // history.pushState({ data: `${purpose}` }, null, `${purpose}`);
   registerForm.innerHTML = `
       <select name="posting-type form-element">
         <option value="start" selected> 게시판을 선택해 주세요
