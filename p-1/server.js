@@ -19,16 +19,6 @@ app.get("/getInfo", (req, res) => {
     });
 })
 
-app.get("/delete-contact", (req, res) => {
-    const request=req.query
-    const query="DELETE FROM post where name=?";
-    const params=[request.name]
-    connection.query(query,params,(err,result,fields) => {
-      if(err) throw err;
-    
-      res.json({deleted:result.affectedRows})   
-    });
-})
 
 app.get("/", (req,res) => {
     res.sendFile(path.resolve(__dirname, "frontend", "index.html"));

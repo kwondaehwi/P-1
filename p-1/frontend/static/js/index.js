@@ -41,9 +41,6 @@ const router = async() => {
     const root = document.querySelector("#root");
     root.innerHTML = await header.getHtml();
     root.innerHTML += await view.getHtml();
-
-
-    
 };
 
 document.addEventListener("DOMContentLoaded", () => {
