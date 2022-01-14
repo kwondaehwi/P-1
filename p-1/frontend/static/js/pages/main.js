@@ -3,13 +3,18 @@ export default class {
 
     constructor() {
         $.title = "Main";
+        const enroll = $.createElement('div');
+        enroll.innerHTML = "등록하기";
+        const top = $.createElement('div');
+        top.appendChild(enroll);
+
     }
 
     async getHtml() {
         return `
             <div class="midnav">
-            <a >자유게시판</a>
-            <a class="nav_item" href="/enroll" data-link>등록하기</a>
+            <span>자유게시판</span>
+            <span id="enroll" data-link>등록하기</span>
         </div>
 
         <table id = "table" class="table">
@@ -36,7 +41,6 @@ export default class {
                 table.appendChild(title);
                 table.appendChild(anon);
             })
-            
         })}
     </script>
 
